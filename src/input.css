@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@import "tailwindcss";
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 570px;
+  --breakpoint-md: 720px;
+  --breakpoint-lg: 920px;
+  --breakpoint-xl: 1180px;
+  --breakpoint-xxl: 1500px;
+  --font-nice: "Pacifico", cursive;
+  --font-normal:  "Cormorant", serif;
+  --color-yellow:#E5DDE2;
+  --color-dark:#17151A;
+  --color-overlay:rgba(0, 0, 0, 0.7);
+}
+
+  
+
+@utility container {
+  @apply max-w-292.5 mx-auto ;
+}
+

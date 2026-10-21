@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font Link Start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Font Link Start -->
+    <!-- Font Link Start -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Link End -->
+    <!-- All CSS Link Start -->
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="src/input.css" />
+    <!-- All CSS Link End -->
+
+    <title>My Website</title>
+  </head>
+  <body>
+    <div class="bg-dark py-4 relative">
+      <!-- Menu Part Start -->
+      <section class="relative">
+        <div class="container">
+          <div class="flex justify-between items-center">
+            <span
+              ><a href="#" class="font-nice text-[40px] text-pink-300">
+                Hello Ladies
+              </a></span
+            >
+
+            <ul class="lg:flex  gap-x-10 font-normal text-[18px] font-semibold menu  hidden  ">
+              <li
+                class="relative after:content-[''] transition-all ease-in  hover:text-pink-300 duration-300  after:w-0  after:absolute after:left-0 after:-bottom-2  after:h-0.5 after:bg-pink-300  text-yellow"
+              >
+                <a href="#">Home</a>
+              </li>
+              <li
+                class="relative after:content-[''] transition-all ease-in  hover:text-pink-300 duration-300 after:w-0  after:absolute after:left-0 after:-bottom-2  after:h-0.5 after:bg-pink-300  text-yellow"
+              >
+                <a href="#">About</a>
+              </li>
+              <li
+                class="relative after:content-[''] transition-all ease-in  hover:text-pink-300 duration-300 after:w-0  after:absolute after:left-0 after:-bottom-2  after:h-0.5 after:bg-pink-300  text-yellow"
+              >
+                <a href="#">Shop</a>
+              </li>
+              <li
+                class="relative after:content-[''] transition-all ease-in  hover:text-pink-300 duration-300 after:w-0  after:absolute after:left-0 after:-bottom-2  after:h-0.5 after:bg-pink-300  text-yellow"
+              >
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+            <div class=" flex flex-col gap-y-2 burger lg:hidden!">
+              <span class="block h-0.5 w-7.5 bg-yellow transition-all duration-300 ease-in-out"></span>
+              <span class="block h-0.5 w-7.5  bg-yellow transition-all duration-300 ease-in-out"></span>
+              <span class="block h-0.5 w-7.5 bg-yellow transition-all duration-300 ease-in-out"></span>
+            </div>
+
+          </div>
+      
+        </div>
+      </section>
+
+      <!-- Menu Part End -->
+      <!-- 2nd Menu Start -->
+      <div class="container text-yellow mt-3">
+        <div class="flex gap-x-5 items-center">
+          <ul class="flex gap-x-5 items-center">
+            <li>
+              <a href="#"
+                ><i
+                  class="cart fa-solid fa-cart-shopping text-[20px] text-yellow hover:text-pink-300 transition-all duration-300 ease-linear"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-solid fa-heart text-yellow text-[20px] hover:text-pink-300 transition-all duration-300 ease-linear"
+                ></i
+              ></a>
+            </li>
+          </ul>
+          <div class="flex gap-x-5">
+            <input
+              type="search"
+              class="   border-2 border-yellow rounded-2xl lg:w-175 w-50%"
+            />
+            <div
+              class="w-10 h-10 flex justify-center items-center rounded-2xl bg-pink-300 text-dark"
+            >
+              <i class="fa-solid fa-magnifying-glass text-[20px]"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 2nd Menu Start -->
+
+      <!-- Cart Part Start -->
+      <div
+        class="transition duration-300 bar w-100 -translate-x-100 py-5 px-2 border-2 border-pink-300 absolute top-0 left-0 bg-dark"
+      >
+        <p class="text-end text-[30px] cursor-pointer cartRemove ">
+          <i class="fa-regular fa-circle-xmark text-end text-yellow"></i>
+        </p>
+
+        <h2 class="font-normal text-[40px] text-center text-pink-300">
+          Your Cart
+        </h2>
+        <ul class="text-yellow text-[25px] font-normal">
+          <li class="flex justify-between">
+            <span>Your Product name</span>
+            <b>$100</b>
+            <button
+              class="bg-red-700 rounded-2xl transiton duration-300 hover:bg-red-500 px-2"
+            >
+              Remove
+            </button>
+
+            <hr />
+          </li>
+        </ul>
+        <h2 class="text-yellow text-[30px]">Total: <span>$100</span></h2>
+      </div>
+      <!-- Cart Part End -->
+    </div>
+
+    <!-- Banner Part Start -->
+     <div class="container bg-[url(../images/images.jpg)] bg-cover bg-center bg-no-repeat ">
+      <div class="bg-overlay">
+       <h1 class="text-4xl text-[55px] font-bold text-white leading-tight font-nice  w-187.5">
+  <span class="text-pink-300"> Reveal</span>
+   Your Beauty,Define Your
+  <span class="text-pink-300"> Elegance.</span>
+</h1>
+      </div>
+     </div>
+    <!-- Banner Part End -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
