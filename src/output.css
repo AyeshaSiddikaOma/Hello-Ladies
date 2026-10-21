@@ -489,8 +489,17 @@
   .bg-\[url\(\.\.\/images\/\)\] {
     background-image: url(../images/);
   }
+  .bg-\[url\(\.\.\/images\/\.jpg\)\] {
+    background-image: url(../images/.jpg);
+  }
   .bg-\[url\(\.\.\/images\/images\.jpg\)\] {
     background-image: url(../images/images.jpg);
+  }
+  .bg-\[url\(\.\.\/images\/pi\.jpg\)\] {
+    background-image: url(../images/pi.jpg);
+  }
+  .bg-\[url\(\.\.\/images\/s\.jpg\)\] {
+    background-image: url(../images/s.jpg);
   }
   .bg-\[url\(\.\.\/images\/slide\)\] {
     background-image: url(../images/slide);

@@ -75,6 +75,10 @@ let right = document.querySelector('.right')
 let left = document.querySelector('.left')
 let slide = document.querySelectorAll('.shrink-0')
 let sliderNumber = 1;
+
+
+
+
 right.addEventListener('click',()=>{
 
 if(sliderNumber < slide.length){
@@ -88,6 +92,7 @@ sliderNumber = 0
 }
 
 })
+//===========================
 left.addEventListener('click', () => {
   sliderNumber--;
 
@@ -98,4 +103,21 @@ left.addEventListener('click', () => {
   slide[0].parentElement.style.transform =
     `translateX(-${(sliderNumber - 1) * 1179}px)`;
 });
+
+
+
+
 //Slider End
+
+// setInterval(()=>{
+  
+// if(sliderNumber < slide.length){
+//    slide[0].parentElement.style.transform = `translateX(${sliderNumber * -1179}px)`;
+// sliderNumber++
+// }
+// else{
+//      slide[0].parentElement.style.transform = `translateX(${sliderNumber * 0}px)`;
+// sliderNumber = 0
+
+// }
+// },1000)
