@@ -68,8 +68,15 @@ let MainUl = document.querySelectorAll('.menu li ');
   });
 
 
-
-
-
-
 //Menu Active End
+
+//Slider Start
+let right = document.querySelector('.right')
+let left = document.querySelector('.left')
+let slide = document.querySelector('.slide')
+
+right.addEventListener('click',()=>{
+slide.style.transform = 'translateX(-1170px)'
+})
+
+//Slider End
