@@ -105,6 +105,23 @@ left.addEventListener('click', () => {
 });
 
 
+//===========
+let two = document.querySelector('.two')
+two.addEventListener('click',()=>{
+if(sliderNumber == 1){
+   slide[0].parentElement.style.transform = `translateX(${sliderNumber * -1179}px)`;
+
+}else if(sliderNumber == 2){
+   slide[0].parentElement.style.transform = `translateX(${sliderNumber * 0}px)`;
+
+}
+else if(sliderNumber == 3){
+
+   slide[0].parentElement.style.transform = `translateX(${sliderNumber * -390}px)`;
+}
+})
+
+
 
 
 //Slider End
