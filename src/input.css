@@ -20,3 +20,6 @@
   @apply max-w-292.5 mx-auto ;
 }
 
+@utility btn-shop {
+  @apply inline-block px-8 py-2 bg-pink-300 text-dark font-normal text-[20px] font-bold rounded-full border border-pink-300 transition-all duration-300 ease-linear hover:bg-transparent hover:text-pink-300;
+}
