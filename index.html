@@ -121,7 +121,7 @@
 
       <!-- Cart Part Start -->
       <div
-        class="transition duration-300 bar w-100 -translate-x-100 py-5 px-2 border-2 border-pink-300 absolute top-0 left-0 bg-dark"
+        class="transition z-10 duration-300 bar w-100 -translate-x-100 py-5 px-2 border-2 border-pink-300 absolute top-0 left-0 bg-dark"
       >
         <p class="text-end text-[30px] cursor-pointer cartRemove">
           <i class="fa-regular fa-circle-xmark text-end text-yellow"></i>
@@ -150,28 +150,65 @@
 
     <!-- Banner Part Start -->
 
-    <section>
-      <i class="fa-solid fa-angles-left"></i>
-      
-      <i class="fa-solid fa-angles-right"></i>
-    </section>
-    <div
-      class="container bg-[url(../images/images.jpg)] bg-cover bg-center bg-no-repeat"
-    >
-      <div class="bg-overlay py-30 px-5">
-        <h1
-          class="text-4xl text-[55px] font-bold text-white leading-tight font-nice w-187.5"
-        >
-          <span class="text-pink-300"> Reveal</span>
-          Your Beauty,Define Your
-          <span class="text-pink-300"> Elegance.</span>
-        </h1>
-        <button class="btn-shop mt-5">Shop Now</button>
-      </div>
-    </div>
+<section class="relative flex justify-between items-center text-red-800">
+<i class="fa-solid left fa-angles-left absolute z-1 left-15 text-yellow text-[30px]"></i>
+<div class="frame   container ">
+  <div class="slide   relative  flex overflow-hidden  ">
+  
+    <!-- 1st Slide -->
+          <div
+            class="w-full shrink-0 h-full object-cover bg-[url(../images/images.jpg)] bg-cover bg-center bg-no-repeat"
+          >
+            <div class="bg-overlay py-30 px-15">
+              <h1
+                class="text-4xl text-[55px] font-bold text-white leading-tight font-nice w-187.5"
+              >
+                <span class="text-pink-300"> Reveal</span>
+                Your Beauty,Define Your
+                <span class="text-pink-300"> Elegance.</span>
+              </h1>
+              <button class="btn-shop mt-5">Shop Now</button>
+            </div>
+          </div>
+  <!-- 3nd Slide -->
+          <div
+            class="container shrink-0 w-full h-full object-cover  bg-[url(../images/slide3.jpg)] bg-cover bg-center bg-no-repeat"
+          >
+            <div class="bg-overlay py-30 px-15">
+              <h1
+                class="text-4xl text-[55px] font-bold text-white leading-tight font-nice w-187.5"
+              >
+                <span class="text-pink-300"> Reveal</span>
+                Your Beauty,Define Your
+                <span class="text-pink-300"> Elegance.</span>
+              </h1>
+              <button class="btn-shop mt-5">Shop Now</button>
+            </div>
+          </div>
+  <!-- 2nd Slide -->
+          <div
+            class="container shrink-0 w-full h-full object-cover   bg-[url(../images/slide2.jpg)] bg-cover bg-center bg-no-repeat"
+          >
+            <div class="bg-overlay py-30 px-15">
+              <h1
+                class="text-4xl text-[55px] font-bold text-white leading-tight font-nice w-187.5"
+              >
+                <span class="text-pink-300"> Reveal</span>
+                Your Beauty,Define Your
+                <span class="text-pink-300"> Elegance.</span>
+              </h1>
+              <button class="btn-shop mt-5">Shop Now</button>
+            </div>
+          </div>
+  </div>
+
+
+</div>
+<i class="fa-solid fa-angles-right right absolute right-15 text-yellow text-[30px]"></i>
+</section>
+
+
     <!-- Banner Part End -->
-
-
 
     <script src="js/script.js"></script>
   </body>
