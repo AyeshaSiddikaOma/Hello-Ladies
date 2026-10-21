@@ -124,6 +124,7 @@ else if(sliderNumber == 3){
 
 
 
+
 //Slider End
 
 // setInterval(()=>{
