@@ -73,10 +73,29 @@ let MainUl = document.querySelectorAll('.menu li ');
 //Slider Start
 let right = document.querySelector('.right')
 let left = document.querySelector('.left')
-let slide = document.querySelector('.slide')
-
+let slide = document.querySelectorAll('.shrink-0')
+let sliderNumber = 1;
 right.addEventListener('click',()=>{
-slide.style.transform = 'translateX(-1170px)'
-})
 
+if(sliderNumber < slide.length){
+   slide[0].parentElement.style.transform = `translateX(${sliderNumber * -1179}px)`;
+sliderNumber++
+}
+else{
+     slide[0].parentElement.style.transform = `translateX(${sliderNumber * 0}px)`;
+sliderNumber = 0
+
+}
+
+})
+left.addEventListener('click', () => {
+  sliderNumber--;
+
+  if (sliderNumber < 1) {
+    sliderNumber = slide.length;
+  }
+
+  slide[0].parentElement.style.transform =
+    `translateX(-${(sliderNumber - 1) * 1179}px)`;
+});
 //Slider End
