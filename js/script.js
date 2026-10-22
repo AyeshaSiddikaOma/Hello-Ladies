@@ -182,5 +182,47 @@ years.innerHTML = `${bochor}`
 let products = document.querySelector('.products')
 
 async function getData(){
-  let response =await fetch("")
+  let response =await fetch("https://dummyjson.com/products")
+  let data = await response.json()
+  data.products.forEach(  (item)=>{
+console.log(item.title)
+
+products.innerHTML += `  
+  
+<div class="w-full   rounded-xl overflow-hidden shadow-lg border mt-5 border-gray-200">
+
+  <!-- Product Image -->
+  <img src="${item.thumbnail}"
+       alt="Product"
+       class="w-full h-55 object-cover">
+
+  <!-- Product Details -->
+  <div class="p-5">
+
+    <h2 class="text-xl font-bold text-yellow">
+      ${item.title}
+    </h2>
+
+    <p class="text-yellow text-sm mt-2">
+ ${item.description}    </p>
+
+    <p class="text-2xl font-bold text-pink-300 mt-3">
+   ${item.price}
+    </p>
+
+    <button class="w-full mt-4 bg-pink-300 text-dark border-2 border-pink-300
+                   py-3 rounded-lg font-semibold
+                   hover:bg-transparent hover:text-yellow transition-all duration-300">
+      Add to Cart
+    </button>
+
+  </div>
+</div>
+
+`
+
+  } )
 }
+getData()
+
+
