@@ -126,9 +126,30 @@ sliderNumber = 0
 //Slider End
 // Count Down Start
 let years = document.querySelector('#years')
-let days = document.querySelector('#months')
+let months = document.querySelector('#months')
 let days = document.querySelector('#days')
-let days = document.querySelector('#hours')
-let days = document.querySelector('#minutes')
-let days = document.querySelector('#seconds')
+let hours = document.querySelector('#hours')
+let minutes = document.querySelector('#minutes')
+let seconds = document.querySelector('#seconds')
 
+
+setInterval(() => {
+   let currentDate = new Date()
+   let targetDate = new Date(2027,9,26,12,30)
+let diff =  Number(targetDate) - Number(currentDate) 
+console.log(diff)
+
+let  bochor =  targetDate.getFullYear()- currentDate.getFullYear()
+let  mas =  targetDate.getMonth()- currentDate.getMonth()
+let  din =  targetDate.getDate()- currentDate.getDate()
+console.log(bochor)
+
+
+
+
+
+
+
+
+
+}, 1000);
