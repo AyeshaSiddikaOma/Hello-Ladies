@@ -124,7 +124,9 @@ sliderNumber = 0
 
 
 //Slider End
+
 // Count Down Start
+
 let years = document.querySelector('#years')
 let months = document.querySelector('#months')
 let days = document.querySelector('#days')
@@ -143,11 +145,34 @@ let  bochor =  targetDate.getFullYear()- currentDate.getFullYear()
 let  mas =  targetDate.getMonth()- currentDate.getMonth()
 let  din =  targetDate.getDate()- currentDate.getDate()
 console.log(bochor)
+console.log(mas)
+console.log(din)
+
+  if (mas < 0) {
+    bochor--;
+    mas += 12;
+  }
+
+  if (din < 0) {
+    mas--;
+    din += new Date(
+      currentDate.getFullYear(),
+      currentDate.getMonth(),
+      0
+    ).getDate();
+  }
 
 
+let ghonta =Math.floor(diff / (1000 * 60 * 60) ) % 24;
+let min =Math.floor(diff / (1000 * 60) ) % 60;
+let sec =Math.floor(diff / 1000) % 60;
 
-
-
+seconds.innerHTML = `${sec}`
+minutes.innerHTML = `${min}`
+hours.innerHTML = `${ghonta}`
+days.innerHTML = `${din}`
+months.innerHTML = `${mas}`
+years.innerHTML = `${bochor}`
 
 
 
