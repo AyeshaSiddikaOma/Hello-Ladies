@@ -105,37 +105,30 @@ left.addEventListener('click', () => {
 });
 
 
-//===========
-let two = document.querySelector('.two')
-two.addEventListener('click',()=>{
-if(sliderNumber == 1){
+
+
+
+setInterval(()=>{
+  
+if(sliderNumber < slide.length){
    slide[0].parentElement.style.transform = `translateX(${sliderNumber * -1179}px)`;
-
-}else if(sliderNumber == 2){
-   slide[0].parentElement.style.transform = `translateX(${sliderNumber * 0}px)`;
+sliderNumber++
+}
+else{
+     slide[0].parentElement.style.transform = `translateX(${sliderNumber * 0}px)`;
+sliderNumber = 0
 
 }
-else if(sliderNumber == 3){
-
-   slide[0].parentElement.style.transform = `translateX(${sliderNumber * -390}px)`;
-}
-})
-
-
+},2000)
 
 
 
 //Slider End
+// Count Down Start
+let years = document.querySelector('#years')
+let days = document.querySelector('#months')
+let days = document.querySelector('#days')
+let days = document.querySelector('#hours')
+let days = document.querySelector('#minutes')
+let days = document.querySelector('#seconds')
 
-// setInterval(()=>{
-  
-// if(sliderNumber < slide.length){
-//    slide[0].parentElement.style.transform = `translateX(${sliderNumber * -1179}px)`;
-// sliderNumber++
-// }
-// else{
-//      slide[0].parentElement.style.transform = `translateX(${sliderNumber * 0}px)`;
-// sliderNumber = 0
-
-// }
-// },1000)
