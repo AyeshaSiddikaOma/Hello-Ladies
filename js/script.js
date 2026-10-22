@@ -180,3 +180,7 @@ years.innerHTML = `${bochor}`
 }, 1000);
 //============================
 let products = document.querySelector('.products')
+
+async function getData(){
+  let response =await fetch("")
+}
