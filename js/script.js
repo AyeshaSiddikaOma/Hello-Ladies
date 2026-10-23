@@ -119,7 +119,7 @@ else{
 sliderNumber = 0
 
 }
-},2000)
+},5000)
 
 
 
@@ -179,6 +179,37 @@ years.innerHTML = `${bochor}`
 
 }, 1000);
 //============================
+
+
+//====================================
+//=============================
+
+
+let input = document.querySelector('.input')
+
+let banner = document.querySelector('.banner');
+let count = document.querySelector('.count');
+input.addEventListener('input',()=>{
+    banner.style.display = 'none';
+  count.style.display = 'none';
+  let products = document.querySelectorAll('.products > div')
+  products.forEach( (box)=>{
+  let name = box.querySelector('h2').innerText.toLowerCase()
+  if (name.includes(input.value.toLowerCase())) {
+  box.style.display = 'block';
+} else {
+  box.style.display = 'none';
+}
+    
+  } )
+})
+
+
+
+
+
+
+//===============
 let products = document.querySelector('.products')
 
 async function getData(){
@@ -212,7 +243,7 @@ products.innerHTML += `
 
     <button class="w-full mt-4 bg-pink-300 text-dark border-2 border-pink-300
                    py-3 rounded-lg font-semibold
-                   hover:bg-transparent hover:text-yellow transition-all duration-300">
+                   hover:bg-transparent hover:text-yellow transition-all duration-300 cartBtn"  >
       Add to Cart
     </button>
 
@@ -221,8 +252,11 @@ products.innerHTML += `
 
 `
 
+  // Add to Cart event
+
+let cartBtn = document.querySelectorAll('.cartBtn')
+console.log(cartBtn)
+
   } )
 }
 getData()
-
-
