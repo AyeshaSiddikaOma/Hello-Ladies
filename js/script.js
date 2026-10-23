@@ -224,8 +224,6 @@ products.innerHTML += `
   // Add to Cart event
 
 
-  
-
 
   } )
 }
