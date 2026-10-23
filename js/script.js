@@ -144,9 +144,6 @@ console.log(diff)
 let  bochor =  targetDate.getFullYear()- currentDate.getFullYear()
 let  mas =  targetDate.getMonth()- currentDate.getMonth()
 let  din =  targetDate.getDate()- currentDate.getDate()
-console.log(bochor)
-console.log(mas)
-console.log(din)
 
   if (mas < 0) {
     bochor--;
@@ -255,7 +252,13 @@ products.innerHTML += `
   // Add to Cart event
 
 let cartBtn = document.querySelectorAll('.cartBtn')
-console.log(cartBtn)
+
+cartBtn.addEventListener('click',()=>{
+  console.log(clicked)
+})
+
+
+
 
   } )
 }
