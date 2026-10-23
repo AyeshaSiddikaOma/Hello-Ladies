@@ -144,6 +144,9 @@ console.log(diff)
 let  bochor =  targetDate.getFullYear()- currentDate.getFullYear()
 let  mas =  targetDate.getMonth()- currentDate.getMonth()
 let  din =  targetDate.getDate()- currentDate.getDate()
+console.log(bochor)
+console.log(mas)
+console.log(din)
 
   if (mas < 0) {
     bochor--;
@@ -176,37 +179,6 @@ years.innerHTML = `${bochor}`
 
 }, 1000);
 //============================
-
-
-//====================================
-//=============================
-
-
-let input = document.querySelector('.input')
-
-let banner = document.querySelector('.banner');
-let count = document.querySelector('.count');
-input.addEventListener('input',()=>{
-    banner.style.display = 'none';
-  count.style.display = 'none';
-  let products = document.querySelectorAll('.products > div')
-  products.forEach( (box)=>{
-  let name = box.querySelector('h2').innerText.toLowerCase()
-  if (name.includes(input.value.toLowerCase())) {
-  box.style.display = 'block';
-} else {
-  box.style.display = 'none';
-}
-    
-  } )
-})
-
-
-
-
-
-
-//===============
 let products = document.querySelector('.products')
 
 async function getData(){
@@ -251,15 +223,31 @@ products.innerHTML += `
 
   // Add to Cart event
 
-let cartBtn = document.querySelectorAll('.cartBtn')
 
-cartBtn.addEventListener('click',()=>{
-  console.log(clicked)
-})
-
-
+  
 
 
   } )
 }
 getData()
+//====================================
+//=============================
+let input = document.querySelector('.input')
+
+let banner = document.querySelector('.banner');
+let count = document.querySelector('.count');
+input.addEventListener('input',()=>{
+    banner.style.display = 'none';
+  count.style.display = 'none';
+  let products = document.querySelectorAll('.products > div')
+  products.forEach( (box)=>{
+  let name = box.querySelector('h2').innerText.toLowerCase()
+  if (name.includes(input.value.toLowerCase())) {
+  box.style.display = 'block';
+} else {
+  box.style.display = 'none';
+}
+    
+  } )
+})
+//===============
